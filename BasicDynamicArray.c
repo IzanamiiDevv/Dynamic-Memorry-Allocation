@@ -29,7 +29,7 @@ void Array_Integer_Push_Back(Array_Interger *a, int element) {
     a->array[a->used++] = element;
 }
 
-void Array_Integers_Pop_Back(Array_Interger *a) {
+void Array_Integer_Pop_Back(Array_Interger *a) {
     if(a->used == 0) return;
     if(a->used == a->length) {
         a->length = (a->length / 2);
@@ -72,7 +72,7 @@ int main() {
     Array_Interger numbers = Initialize_Array_Interger(num, length);
 
     Array_Integer_Push_Back(&numbers, 10);
-    Array_Integers_Pop_Back(&numbers);
+    Array_Integer_Pop_Back(&numbers);
 
     Array_Integer_Map(&numbers, increament);
     Array_Integer_ForEach(numbers, printAll);
