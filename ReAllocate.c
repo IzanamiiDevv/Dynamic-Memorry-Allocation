@@ -10,7 +10,7 @@ int main() {
 
     array = realloc(array ,sizeof(int) * 2);
 
-    printf("%i", array[1]);  //10
+    printf("%i\n", array[1]);  //10
     printf("%i", array[2]);  //outside the bond
     free(array);
 
