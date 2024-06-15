@@ -75,10 +75,8 @@ int main() {
     Array_Integers_Pop_Back(&numbers);
 
     Array_Integer_Map(&numbers, increament);
-
     Array_Integer_ForEach(numbers, printAll);
 
     Array_Interger_Free(&numbers);
-
     return 0;
 }
